@@ -1,0 +1,136 @@
+nav.navbar,footer
+{
+	display: none;
+	opacity: 0;
+}
+.pageTitle
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.pageTitle h1
+{
+	font-size: var(--iconSize);
+}
+.pageTitle img
+{
+	margin: auto;
+	width: 100px;
+}
+.pageContent
+{
+	background-image: url('../img/png/bg8.png');
+	background-repeat: repeat;
+	/*background-color: var(--colorWhite1);*/
+	background-size: 40%;
+
+	padding: 50px 0;
+}
+
+
+div.authentificationArea input[type="radio"]
+{
+	display: none;
+}
+div.authentificationArea
+{
+	width: 30%;
+	margin: auto;
+	font-family: var(--myFont1);
+}
+div.aaTitle
+{
+	width: 100%;
+	text-align: center;
+}
+div.aaTitle label
+{
+	color: var(--colorBlue1);
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin: auto 20px;
+}
+
+
+div.authentificationArea button
+{
+	background-color: var(--colorPrincipal);
+	width: 150px;
+}
+div.authentificationArea form 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/*background-color: pink;*/
+}
+div.authentificationArea form div.formField
+{
+	/*background-color: yellow;*/
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+	position: relative;
+}
+
+div.authentificationArea form div.formField input
+{
+	width: 100%;
+	margin: auto;
+	border-bottom: solid 1px var(--colorBlack2);
+	background-color: transparent;
+} 
+div.authentificationArea div.formBtn
+{
+	margin: 15px 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+div.aaSignup
+{
+	display: flex;
+}
+div#ffProfilStName
+{
+	display: none;
+}
+div#ffProfilSexes
+{
+
+}
+div#ffProfilStatus
+{
+
+}
+
+.profilSexe,.profilStatus,.profilCity
+{
+	transition: opacity 0.5s var(--animationEase);
+	position: absolute;
+	top: 105%;
+	width: 40%;
+	left: 30%;
+	right: 30%;
+	background-color: var(--colorWhite1);
+	/*background-color: red;*/
+	display: none;
+	opacity: 0;
+	z-index: 1000;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.profilSexe li,.profilStatus li,.profilCity li
+{
+	background-color: var(--colorPrincipal);
+	padding: 0 10px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+
+}

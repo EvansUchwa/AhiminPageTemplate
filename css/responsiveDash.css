@@ -1,0 +1,219 @@
+@media screen and (max-width: 576px)
+{
+	:root
+	{
+		--quartResponsive:  100%;
+		--modalResponsive: 90%;
+		/*--textSize: 2.5vw;*/
+		--radiusCircle2:  30px;
+		--profilImgNav: 40px;
+		--imageIconRadius: 20px;
+		--imageUpSize: 100px;
+		--imagesUpSize: 50px;
+		--btnActionPadding: 8px;
+		/*--inputHeight: 30px;*/
+		--modalSize: 90%;
+		--authDiv: 90%;
+	}
+	div.nsrPcLink
+	{
+		display: none;
+	}
+	label.nsrMenu
+	{
+		/*display: none;*/
+	}
+	form.navSearchForm
+	{
+		padding: 0 !important;
+		width: 95%;
+	}
+	form.navSearchForm div:nth-child(1)
+	{
+		width: 30%;
+		/*background-color: red;*/
+	}
+	form.navSearchForm div:nth-child(1) input
+	{
+		
+	}
+	form.navSearchForm input:nth-child(2)
+	{
+		width: 60%;
+	}
+	form.navSearchForm button
+	{
+		width: 10%;
+	}
+	div.cp1Head
+	{
+		height: 150px;
+	}
+	a.cardProduct1
+	{
+		width: 150px !important;
+	}
+	a.cardProduct2
+	{
+		/*height: 100px;*/
+		/*width: 95%;*/
+	}
+	div.cp2rHead p:first-child
+	{
+		
+	}
+	div.cp2rFoot p
+	{
+		font-size: 14px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	div.dashAdd
+	{
+		width: 95%;
+	}
+	div.dafFilesSelect label
+	{
+
+	}
+	div.dafFilesSelect label p i
+	{
+		display: none;
+	}
+
+	/*Pour le boutton poster article*/
+	div.postArticle
+	{
+		display: none;
+	}
+	div.bottomBanner
+	{
+		font-family: var(--myFont1);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--colorPrincipal);
+		height: calc(var(--inputHeight) * 2);
+		border-top: solid 1px orange;
+	}
+	div.bottomBanner > div
+	{
+		width: 20%;
+		color: var(--colorWhite1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	div.bottomBanner > div span:first-child
+	{
+		cursor: pointer;
+		font-size: var(--iconSize);
+	}
+	div.bottomBanner > div span:last-child
+	{
+		display: none;
+		cursor: pointer;
+		font-size: var(--textSize);
+	}
+	div.bottomBanner div
+	{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+	}
+	div.bottomBanner div 	a:first-child 
+	{
+		font-size: 25px;
+		color: var(--colorWhite1);
+	}
+	div.bottomBanner div span:first-child 
+	{
+		font-size: 25px;
+		/*color: var(--colorWhite1);*/
+	}
+	div.bottomBanner div span:last-child
+	{
+		font-size: 12px;
+	}
+
+	/*Pour la page membre*/
+	div.aaTitle label
+	{
+		margin: auto 10px;
+	}
+	div.authentificationArea
+	{
+		width: 90%;
+	}
+	div.authentificationArea form div.formField input
+	{
+		width: 90%;
+	} 
+	div#ffProfilStName,div#ffProfilSexes,div#ffProfilStatus,div#ffCitys
+	{
+		width: 90%;
+	}
+
+	footer
+	{
+		
+	}
+	footer .footLogoSocial
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footHelpService
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footUtilityLink
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footLegalInfo
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+}
+/*Format tablette*/
+@media screen and (min-width: 576px) and (max-width: 768px)
+{
+	a.cardProduct2
+	{
+		width: 45%;
+	}
+}
+		/*Format petit pc*/
+		@media screen and (min-width: 768) and (max-width: 992px)
+		{
+			
+		}
+		/*Format pc moyen et grand*/
+		@media screen and (min-width: 992) and (max-width: 1200px)
+		{
+			
+		}
+		/*Format desktop et tv plasma*/
+		@media screen and (min-width: 1200px)
+		{
+			
+		}

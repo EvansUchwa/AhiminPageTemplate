@@ -1,0 +1,251 @@
+div.indexbanner
+{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Poppins-Regular';
+	position: relative;
+}
+div.ibImg 
+{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-color: var(--colorPrincipal);
+}
+div.ibImg:after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	/*background-color: var(--colorOverlay1);*/
+}
+div.ibImg img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+div.ibTitle
+{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	color: var(--colorWhite1);
+	font-size: 30px;
+}
+
+div.ibSearchForm
+{
+	position: absolute;
+	background-color: rgba(12, 12, 13, 0.3);
+	top: 50%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	margin: auto;
+}
+div.ibSearchForm form
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 0;
+}
+div.ibsfFied
+{
+	margin: auto;
+	width: 20%;
+	position: relative;
+}
+div.ibsfFied input
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+	text-align: center;
+	color: var(--colorBlack1);
+	width: 100%;
+	height: calc(var(--inputHeight) + 10px);
+}
+div.ibsfBtn
+{
+	width: 15%;
+	margin: auto;
+}
+div.ibsfBtn button
+{
+	width: 100%;
+	background-color: var(--colorPrincipal);
+	height: calc(var(--inputHeight) + 10px);
+	/*font-size: 20px;*/
+}
+
+div#ibsfDroperCategorys,div#ibsfDroperSubCategorys
+{
+	position: relative;
+}
+ul.ibsfCategorys,ul.ibsfSubCategorys
+{
+	display: none;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	/*background-color: yellow;*/
+	position: absolute;
+	width: 105%;
+	max-height: 200px;
+	overflow-y: auto;
+	left: 0;
+	right: 0;
+	top: 105%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+}
+li.ibsfCategory,li.ibsfSubCategory
+{
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+
+
+
+.rotateIcon
+{
+	transition: transform 0.4s ease;
+	font-size: 22px;
+}
+
+
+
+
+div.ProductByCategorie
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	top: 70%;
+	background-color: var(--colorWhite1);
+	padding: calc(var(--textSize) * 2) 0px;
+	margin: 50px auto;
+}
+div.pbcTitle
+{
+	color: var(--colorWhite3);
+	text-align: center;
+	width: 100%;
+	font-size: calc(var(--textSize) * 2);
+}
+
+
+div.pbcCategories
+{
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+a.pbcCategorie
+{
+	text-align: center;
+	width: 200px !important;
+	margin: auto;
+	color: var(--colorBlue1);
+}
+a.pbcCategorie i
+{
+	color: var(--colorYellow1);
+	width: 100%;
+	margin: auto;
+	font-size: calc(var(--textSize) * 2);
+}
+a.pbcCategorie span
+{
+	width: 100%;
+	color: var(--colorYellow1);
+	margin: auto;
+}
+
+/*Les villes*/
+div.ProductByVille
+{
+	width: 100%;
+	/*background-color: var(--colorWhite2);*/
+	padding: 30px 0px;
+	margin-top: 150px;
+}
+div.pbvHr
+{
+	margin: 15px auto;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-color: var(--colorPrincipal);
+}
+
+div.pbvHr div:nth-child(1),div.pbvHr div:nth-child(3)
+{
+	width: 45%;
+	height: 2px;
+	background-color: var(--colorWhite1);
+	margin: auto 0;
+	/*border: solid 1px red;*/
+}
+div.pbvHr span:nth-child(2)
+{
+	font-size: 40px;
+	color: var(--colorPrincipal);
+}
+div.pbvTitle
+{
+	color: var(--colorWhite3);
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+}
+
+
+div.pbvVilles
+{
+	margin: auto;
+	width: 80%;
+	display: flex;
+}
+a.pbvvVille
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto 0px;
+	padding: 10px 0;
+}
+a.pbvvVille img
+{
+	width: 90%;
+	height: 220px;
+	margin: auto;
+	border-radius: 10px;
+}
+a.pbvvVille span
+{
+	margin: auto;
+	color: var(--colorWhite3);
+}
+
+
+
+
+

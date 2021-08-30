@@ -1,0 +1,272 @@
+@media screen and (max-width: 576px)
+{
+	:root
+	{
+		--quartResponsive:  100%;
+		--modalResponsive: 90%;
+		--textSize: 12px;
+		--radiusCircle2:  30px;
+		--profilImgNav: 40px;
+		--imageIconRadius: 20px;
+		--imageUpSize: 100px;
+		--imagesUpSize: 50px;
+		--btnActionPadding: 8px;
+		--inputHeight: 30px;
+		--modalSize: 90%;
+		--authDiv: 90%;
+	}
+
+	div.navFirstRow
+	{
+		display: none;
+	}
+	div.navSecondRow
+	{
+		
+	}
+	div.nsrLogo img
+	{
+		display: block;
+	}
+	div.nsrLogo p
+	{
+		display: none;
+	}
+	label.nsrMenu
+	{
+		display: none;
+	}
+
+	#nsrCheckPhoneAuth:checked ~ div.nsrPhoneAuth ul
+	{
+		height: auto;
+		max-height: 160px;
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	}
+	div.nsrPhoneAuth
+	{
+		display: block;
+	}
+	div.nsrPhoneAuth ul
+	{
+		transition: max-height 0.5s var(--animationEase);
+		position: absolute;
+		top: 80%;
+		right: 0;
+		background-color: var(--colorWhite1);
+		height: 0;
+		max-height: 0;
+		overflow-y: hidden;
+	}
+	div.nsrPhoneAuth ul li
+	{
+		padding: 10px 15px;
+		display: flex;
+		align-items: center;
+		text-align: justify;
+		font-size: calc(var(--textSize) + 5px);
+	}
+
+
+	div.nsrLink li
+	{
+		font-size: 25px;
+	}
+
+	div.ibTitle
+	{
+		top: 10%;
+		font-size: 20px;
+	}
+	div.ibSearchForm
+	{
+		top: 25%;
+	}
+	div.ibSearchForm form
+	{
+		flex-direction: column;
+	}
+	div.ibsfFied
+	{
+		margin: 5px auto;
+		width: 80%;
+	}
+	div.ibsfBtn
+	{
+		margin-top: 5px;
+		width: 75%;
+	}
+
+	div.pbvTitle
+	{
+		font-size: 20px;
+	}
+	div.ProductByVille
+	{
+		padding: 30px 0;
+	}
+	div.pbvHr
+	{
+		margin: 10px auto;
+	}
+	div.pbvTitle
+	{
+		width: 80%;
+		margin: auto;
+		font-size: 20px;
+	}
+	/*Modal d'espace membre*/
+	#registerModal
+	{
+		/*display: none;*/
+	}
+	div.rmBody
+	{
+		font-family: var(--myFont1);
+		max-height: 80%;
+		background-color: var(--colorWhite1);
+		width: 80%;
+	}
+	div.choiceRegister
+	{
+		width: 100%;
+		text-align: center;
+	}
+	div.choiceRegister div
+	{
+		margin: 20px 0;
+	}
+	div.choiceRegister div  button
+	{
+		width: 100px;
+		background-color: var(--colorPrincipal);
+	}
+	div.rmBody div.modalFooter button
+	{
+		background-color: var(--colorWhite2);
+	}
+
+
+
+
+	/*Pour la page produit*/
+	div.pfModalBody
+	{
+		width: 90%;
+	}
+	#pfmFormFieldPrice > div > div
+	{
+		flex-direction: column;
+	}
+	div.pfmFormField:nth-child(1)
+	{
+		width: 100%;
+	}
+	div.pfmFormField:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	/*Pour la page membre*/
+	div.aaTitle label
+	{
+		margin: auto 10px;
+	}
+	div.authentificationArea
+	{
+		width: 90%;
+	}
+	div.authentificationArea form div.formField input
+	{
+		width: 90%;
+	} 
+	div.footForm
+	{
+		width: 100%;
+	}
+
+
+	/*Pour le boutton poster article*/
+	div.postArticle
+	{
+		display: none;
+	}
+	div.bottomBanner
+	{
+		font-family: var(--myFont1);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--colorPrincipal);
+		height: calc(var(--inputHeight) * 2);
+		border-top: solid 1px orange;
+		z-index: 1000000000;
+	}
+	div.bottomBanner > div
+	{
+		width: 20%;
+		color: var(--colorWhite1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	div.bottomBanner > div span:first-child
+	{
+		cursor: pointer;
+		font-size: var(--iconSize);
+	}
+	div.bottomBanner > div span:last-child
+	{
+		display: none;
+		cursor: pointer;
+		font-size: var(--textSize);
+	}
+	div.bottomBanner div
+	{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+	}
+	div.bottomBanner div span:first-child 
+	{
+		font-size: 25px;
+		/*color: var(--colorWhite1);*/
+	}
+	div.bottomBanner div span:last-child
+	{
+		font-size: 12px;
+	}
+
+
+	footer
+	{
+		
+	}
+	footer .footLogoSocial
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footHelpService
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footUtilityLink
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	footer .footLegalInfo
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+}

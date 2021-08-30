@@ -1,0 +1,237 @@
+:root
+{
+	--logImgBan: 100px;
+	--authDiv: 50%;
+}
+body
+{
+	font-family: var(--myFont1);
+}
+nav.navbar,footer
+{
+	display: none;
+}
+#usrIcon
+{
+	background-image: url('../img/png/user.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+#psdIcon
+{
+	background-image: url('../img/png/password.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+#mailIcon
+{
+	background-image: url('../img/png/mail.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right;
+}
+
+.authPageContent
+{
+	background-color: var(--colorBlack2);
+	/*height: 100vh;*/
+	padding-bottom: 20px;
+	min-height: 100vh;
+	max-height: 160vh;
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+div.authPageLogo
+{
+	width: 100%;
+}
+div.authPageLogo img
+{
+	width: var(--logImgBan);
+}
+div.authentificationArea input[type="radio"]
+{
+	display: none;
+}
+div.authentificationArea
+{
+	width: 50%;
+	/*height: 80%;*/
+	padding-bottom: 50px;
+	margin: auto;
+	font-family: var(--myFont1);
+	background-color: var(--colorPrincipal);
+}
+div.aaTitle
+{
+	width: 100%;
+	text-align: center;
+	padding: var(--inputHeight) 0;
+}
+div.aaTitle label
+{
+	color: var(--colorBlue1);
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	font-size: calc(var(--textSize) + 10px);
+	font-weight: 900;
+	margin: auto 20px;
+}
+
+
+div.authentificationArea button
+{
+	background-color: var(--colorBlack2);
+	text-transform: uppercase;
+}
+div.authentificationArea form 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/*background-color: pink;*/
+}
+div.authentificationArea form div.formField
+{
+	width: 100%;
+	margin: 20px auto;
+	display: flex;
+}
+div#ffProfilStName,div#ffProfilSexes,div#ffProfilStatus,div#ffCitys
+{
+	width: 40%;
+	position: relative;
+}
+div#ffProfilStName ul ,div#ffProfilSexes ul ,div#ffProfilStatus ul,div#ffCitys ul
+{
+	background-color: var(--colorBlack2);
+	color: var(--colorWhite1);
+}
+div#ffProfilStName input,div#ffProfilSexes input,div#ffProfilStatus input,div#ffCitys input
+{
+	width: 100%;
+}
+
+div.authentificationArea form div.formField input
+{
+	width: 40%;
+	margin: auto;
+	border-bottom: solid 1px var(--colorBlack2);
+	background-color: transparent;
+} 
+div.formBtn
+{
+	margin: 15px 0;
+	width: 100%;
+	text-align: center;
+}
+div.formBtn button
+{
+	padding: 0 10px;
+	border-radius: 20px;
+	width: 200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div.formBtn button span
+{
+	color: var(--colorWhite1);
+}
+div.formBtn button i
+{
+	height: 80%;
+	width: 32px;
+	border-radius: 100%;
+	background-color: var(--colorPrincipal);
+}
+
+
+div.footForm
+{
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12px;
+}
+div.rememberMe
+{
+	display: flex;
+	flex-direction: row;
+}
+div.rememberMe input
+{
+	display: block;
+}
+div.aaOtherLogin
+{
+	width: 100%;
+	text-align: center;
+}
+div.aaOtherLogin p:first-child
+{
+	font-weight: bold;
+}
+div.aaOtherLogin p:last-child
+{
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	margin: auto;
+	border-radius: 40px;
+	background-color: #dd4b39;
+	color: var(--colorWhite1);
+}
+
+
+#connexionRadio:checked ~ div.aaTitle label:first-child
+{
+	color: var(--colorWhite1);
+}
+#connexionRadio:checked ~ div.aaLogin
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+div.aaLogin
+{
+	display: none;
+}
+#inscriptionRadio:checked ~ div.aaTitle label:last-child
+{
+	color: var(--colorWhite1);
+}
+#inscriptionRadio:checked ~ div.aaSignin
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+div.aaSignin
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,394 @@
+:root
+{
+	--imageIconRadius: 30px;
+	--imageUpSize: 200px;
+	--imagesUpSize: 200px;
+	--btnActionPadding: 12px;
+}
+body,html
+{
+	font-family: var(--myFont1);
+}
+
+input[type="file"]
+{
+	display: none;
+}
+#ffProfilStName
+{
+	display: none;
+}
+#oldFile1,#oldFile2,#oldFile3,#oldFile4,#prId
+{
+	display: none;
+}
+div.dashAdd
+{
+	text-align: center;
+	width: 90%;
+	margin: 50px auto;
+}
+div.daTitle
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+div.daTitle h1
+{
+	
+}
+div.daTitle hr
+{
+	width: 10%;
+	border-color: var(--colorPrincipal);
+}
+form.daForm
+{
+	padding: 30px 0;
+	/*background-color: var(--colorWhite2);*/
+	width: 100%;
+}
+
+div.dafFileField
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+div.dafFilesSelect
+{
+	display: flex;
+	flex-direction: row;
+}
+div.dafFilesSelect label#profilfl
+{
+	width: var(--imageUpSize);
+	margin: auto;
+	position: relative;
+	height: var(--imageUpSize);
+	display: flex;
+}
+div.dafFilesSelect label
+{
+	width: var(--imagesUpSize);
+	margin: auto;
+	position: relative;
+	height: var(--imagesUpSize);
+	display: flex;
+}
+div.dafFilesSelect label:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*background-color: var(--colorOverlay2);*/
+}
+label#profilFileLabel
+{
+	
+}
+div.dafFilesSelect label span
+{
+	font-size: var(--textSize);
+	color: var(--colorWhite1);
+	background-color: var(--colorPrincipal);
+	border-radius: 5px;
+	position: absolute;
+	top: 80%;
+	height: var(--imageIconRadius);
+	width: var(--imageIconRadius);
+	border-radius: 100%;
+	left: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+p#photoLabel
+{
+	
+}
+div.dafFilesSelect label img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+
+.dafFormGroup1,.dafFormGroup2,.dafFormGroup3,.dafFormGroup4
+{
+	box-sizing: border-box;
+	margin: 10px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.dafFormGroup4  div
+{
+	width: 50%;
+}
+.dafFormGroup4 div  input[type='radio']
+{
+	height: calc(var(--inputHeight) / 1.5);
+	background-color: var(--colorPrincipal);
+}
+
+
+
+div.dafField
+{
+	margin: 10px auto;
+	width: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+div.dafField label
+{
+	width: 100%;
+}
+div.dafField label:first-child
+{
+	font-weight: bold;
+	color: var(--colorSecond);
+	margin-bottom: 10px;
+}
+div.dafField input
+{
+	width: 100%;
+	border-bottom: solid 1px rgba(12, 12, 13, 0.2);
+}
+div.dafField textarea
+{
+	width: 100%;
+	border: solid 1px rgba(12, 12, 13, 0.2);
+	padding: 5px 10px;
+	height: calc(var(--inputHeight) * 3);
+}
+
+
+
+div.dafField input:focus + p
+{
+	width: 100%;
+}
+div.dafField p
+{
+	content: "";
+	position: absolute;
+	width: 100px;
+	background-color: var(--colorPrincipal);
+	height: 2px;
+	width: 0%;
+	transition: all 0.5s ease-in-out;
+	bottom: 0;
+}
+div.dafFormBtn
+{
+	
+}
+div.dafFormBtn button
+{
+	border-radius: 20px;
+}
+
+
+/*Form commentaire*/
+.commentForm,.commentList
+{
+	width: 90%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.commentForm form
+{	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.commentForm label
+{
+	margin: 5px;
+}
+.commentForm textarea
+{
+	height: calc(var(--inputHeight) *3);
+	padding: 10px 20px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.commentForm button
+{
+	margin: 10px 50px auto auto;
+}
+/*REponse commentaire form*/
+div.replyCommentForm
+{
+	background-color: var(--colorWhite1);
+	position: fixed;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	transition: all 0.3s ease;
+}
+div.replyCommentForm form
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+div.replyCommentForm label
+{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+}
+div.replyCommentForm label span
+{
+	font-weight: bold;
+	margin-right: 15px;
+}
+div.replyCommentForm label p
+{
+	margin-left: 2px;
+	color: var(--colorWhite4);
+	max-width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+div.replyCommentForm textarea
+{
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+div.replyCommentForm form div
+{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: right;
+}
+div.replyCommentForm form div button
+{
+	margin: auto 10px;
+}
+div.replyCommentForm form div button:first-child
+{
+	background-color: var(--colorWhite2);
+}
+/*Liste commentaire*/
+.comments
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 40px auto;
+}
+.comment,.replyComment
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.commentInfo img,.replyComment img
+{
+	background-color: var(--colorPrincipal);
+	height: var(--profilImgNav);
+	width: var(--profilImgNav);
+	border-radius: 100%;
+	object-fit: cover;
+	/*margin-right: 10px;*/
+}
+div.commentInfo,div.replyCommentInfo
+{
+	width: 100%;
+	display: flex;
+}
+div.commentInfo div,div.replyCommentInfo
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+div.commentInfo div div
+{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+div.commentInfo div div a
+{
+	margin-right: 10px;
+	font-weight: bolder;
+	color: var(--colorBlack4);
+}
+div.commentInfo div div i
+{
+	font-style: normal;
+}
+div.commentInfo div div span
+{
+	color: var(--colorBlack4);
+	margin-left: 10px;
+}
+
+div.commentAction
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+div.commentAction label
+{
+	margin: auto 5px;
+	border:  solid 1px var(--colorPrincipal);
+	border-radius: 20px;
+	padding: calc(var(--btnActionPadding) / 3) var(--btnActionPadding);
+	font-size: var(--textSize);
+}
+
+/*Liste des reponses de commentaire*/
+ul.replyComments
+{
+	display: none;
+	margin: 10px auto;
+	width: 90%;
+}
+
+
+@media screen and (max-width: 576px)
+{
+	div.dashAdd
+	{
+		width: 95%;
+	}
+	.dafFormGroup1,.dafFormGroup2,.dafFormGroup3,.dafFormGroup4
+	{
+		flex-direction: column;
+	}
+	div.dafField
+	{
+		width: 100%;
+	}
+	.dafFormGroup4 div.dafField
+	{
+		width: 90%;
+	}
+	div.dhfPhone
+	{
+		
+	}
+	
+}
+	

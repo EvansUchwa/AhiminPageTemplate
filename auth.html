@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Espace Membre</title>
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/auth.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+</head>
+<body>
+
+<button onclick="notifyMe()">Notify me!</button>
+
+
+<!-- <div style="display:flex;align-items: center;background: pink;padding: 20px 0;">
+	<img src="img/png/mail.png" style="height: 60px;margin-right: 10px;">
+	<p>Je suis la notif fdp</p>
+</div> -->
+
+</body>
+<script type="text/javascript">
+	
+function notifyMe() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Gebrünn Gebrünn by Paul Kalkbrenner", { icon: "img/png/mail.png"});
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("Hi there!");
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them any more.
+}
+
+
+</script>
+</html>

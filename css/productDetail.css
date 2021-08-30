@@ -1,0 +1,126 @@
+div.productDetails
+{
+	width: 90%;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: row;
+}
+div.reactBtn
+{
+	text-align: right;
+	/*background-color: pink;*/
+}
+div.reactBtn label
+{
+	font-size: 25px;
+}
+#checkReact:checked ~ div.reactBtn label
+{
+	color: #cc0000;
+	animation: myReact 2s infinite;
+}
+div.pdImgSlide
+{
+	margin: auto;
+	width: 45%;
+	/*background-color: pink;*/
+	display: flex;
+	flex-direction: column;
+}
+diV.pdisGiant
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/*background-color: pink;*/
+}
+diV.pdisGiant div.pdisgImg
+{
+	display: flex;
+	justify-content: center;
+}
+div.pdisgImg img
+{
+	margin: auto;
+	height: 300px;
+	width: 60%;
+	object-fit: contain;
+}
+
+div.pdisSmall
+{
+	margin: 10px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+div.pdisSmall div.pdissImg
+{
+	width: 30%;
+	margin: auto 5px;
+	height: 100px;
+}
+div.pdissImg img
+{
+	height: 100%;
+	box-sizing: border-box;
+	object-fit: contain;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+}
+
+
+div.pdTextInfos
+{
+	font-family: var(--myFont1);
+	margin: 0 auto;
+	width: 50%;
+}
+div.pdtiNamesLocationType
+{
+
+}
+div.pdtiNamesLocationType a
+{
+	color: var(--colorBlack1);
+}
+div.pdtiNamesLocationType div
+{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+}
+div.pdtiNamesLocationType div a
+{
+	margin: auto 5px;
+	color: var(--colorWhite1);
+	padding: 5px;
+	border-radius: 50px;
+	background-color: var(--colorPrincipal);
+}
+
+
+
+
+@media screen and (max-width: 576px)
+{
+	div.productDetails
+	{
+		flex-direction: column;
+	}
+	div.pdImgSlide
+	{
+		width: 95%;
+	}
+	div.pdisgImg img
+	{
+		object-fit: contain;
+	}
+	div.pdTextInfos
+	{
+		width: 95%;
+	}
+}

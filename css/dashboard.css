@@ -1,0 +1,144 @@
+body
+{
+	font-family: var(--myFont1);
+}
+
+/*Pour les label de transition entre produits et service*/
+div.dhlpLabel,div.dhcLabel
+{
+	text-align: center;
+	width: 50%;
+	margin: 10px auto;
+}
+.dashHomeLastPosted label,.dashHomeCategorie label
+{
+	background-color: var(--colorWhite2);
+	padding: 10px 12px;
+	border-radius: 30px;
+	margin: 10px auto;
+	color: var(--colorBlack1);
+	transition: all 0.4s ease;
+}
+#lpp,#lps,#prCategorie,#srCategorie
+{
+	display: none;
+}
+div.dashHomeLastPosted input[type="radio"]:checked+div label,div.dashHomeCategorie input[type="radio"]:checked+div label
+{
+	background-color: var(--colorPrincipal);
+	color:  var(--colorWhite1);
+}
+#lpp:checked ~ .dhlpCardList,#lps:checked ~ .dhlsCardList,#prCategorie:checked ~ .dhcPr,#srCategorie:checked ~ .dhcSr
+{
+	display: flex !important;
+}
+
+
+div.dhlpCardList,div.dhlsCardList,div.dhcPr,div.dhcSr
+{
+	width: 100%;
+	display: none;
+}
+
+
+
+
+
+
+div.dashHomeTitle
+{
+	width: 90%;
+	margin: 50px auto;
+	font-family: var(--myFont1);
+}
+
+div.dashHomeTitle p
+{
+	
+}
+
+div.dashHomeTitle h1
+{
+	
+}
+
+div.dashHomeCategorie
+{
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+}
+div.dashHomeCategorie input
+{
+	display: none;
+}
+div.dhcSlide
+{
+	margin: 10px 0;
+	width: 100%;
+}
+div.dhcSlide a.dhcCategorie
+{
+	width: 200px !important;
+	/*height: 400px;*/
+	color: var(--colorBlue1);
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	margin: auto 20px;
+	border-radius: 20px;
+	transition: all 0.5s ease;
+}
+div.dhcSlide a.dhcCategorie:hover
+{
+	background-color: var(--colorPrincipal);
+}
+div.dhcSlide a.dhcCategorie:hover p
+{
+	color: var(--colorWhite1);
+}
+a.dhcCategorie > p
+{
+	width: 80%;
+	margin: auto;
+	color: var(--colorScLow2);
+}
+a.dhcCategorie > p:first-child
+{
+	padding: 5px 0;
+	font-size: calc(var(--textSize) * 2);
+}
+a.dhcCategorie > p:last-child
+{
+	font-size: var(--textSize);
+	padding: 10px 0;
+}
+
+div.dashHomeLastPosted, div.dashHomePopularPosted ,div.dashHomeBestPosted
+{
+	margin: 50px auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: flex-start;*/
+}
+div.dashHomeLastPosted h2, div.dashHomePopularPosted h2,div.dashHomeBestPosted h2
+{
+	font-size: 22px;
+	width: 90%;
+	margin: 20px auto;
+}
+
+
+
+
+/*Pour les produit populaire*/
+div.dhppCardList
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
