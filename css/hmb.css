@@ -132,15 +132,6 @@ label
    height: 100vh;
    z-index: 9000;
 }
-/*.mobileNavSidebar:after
-{
-   content: '';
-   position: absolute;
-   background-color: rgba(0, 0, 0, 0.5);
-   left: 100%;
-   height: 100%;
-   width: 20vw;
-}*/
 .mobileNavSidebarClose,.mobileNavSidebarLogo
 {
    height: 10%;
@@ -293,7 +284,7 @@ li.hmbAuthPart
    border-top: solid 2px var(--cwd4);
     display: flex;
     flex-direction: column;
-    margin: auto 0 0 0 !important;
+    margin: 0 0 0 0 !important;
 }
 li.hmbAuthPart a
 {
