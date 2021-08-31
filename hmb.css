@@ -1,0 +1,296 @@
+body
+{
+    font-family: var(--myFont1);
+}
+input[type="checkbox"],input[type="radio"]
+{
+    display: none;
+}
+label
+{
+    cursor: pointer;
+}
+.mobileNav
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    /*background-color: grey;*/
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.mobileNavIcon
+{
+   font-size: calc(var(--textSize) * 1.5) !important;
+   cursor: pointer;
+}
+.mobileNavLogo,.mobileNavAccount
+{
+    height: 90%;
+}
+.mobileNavLogo img,.mobileNavAccount img
+{
+    height: 100%;
+}
+.mobileNavAccount
+{
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+.mobileNavAccount span
+{
+   
+}
+.mobileNavAccount div:before
+{
+   font-family: "Material Design Icons";
+   content: "\F0360";
+   position: absolute;
+   top: -20px;
+   right: 10px;
+   width:20px;
+   height: 30px;
+   font-size: var(--largeIcon);
+   color: var(--cwd2);
+}
+
+.mobileNavAccount div
+{
+   position: absolute;
+   top: 120%;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   right: -30%;
+   background-color: white;
+   width: 150px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   padding: 0 10px;
+   text-align: justify;
+}
+.mobileNavAccount div a
+{
+   padding: 10px 0;
+   color: var(--cbd4);
+}
+.mobileNavBtn
+{
+    border-radius: 50px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mobileNavBtn
+{
+    width: 80%;
+    z-index: 9999;
+}
+#chkHmb:checked ~ ul.mhmbLink
+{
+    height: auto;
+    overflow: auto;
+    max-height: 500vh;
+}
+#mobileNavBtn > div
+{
+    margin: 5px auto;
+    width: 100%;
+    height: 5px;
+    background-color: #0f3048;;
+}
+
+/* #ffc423 */
+
+#chkHmb:checked ~ .mobileNavSidebar
+{
+    left: 0;
+}
+.mobileNavSidebar
+{
+    /* height: 100vh; */
+    transition: all 0.5s ease;
+   position: fixed;
+   left: -100%;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   padding: 0;
+   margin: 0;
+   background-color: var(--cwd1);
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   width: 80vw;
+   height: 100vh;
+   z-index: 9000;
+}
+.mobileNavSidebarClose,.mobileNavSidebarLogo
+{
+   height: 10%;
+   display: flex;
+    align-items: center;
+}
+.mobileNavSidebarClose label
+{
+    font-size: calc(var(--textSize) * 1.5) !important;
+}
+div.mobileNavSidebarLogo
+{
+   height: 15%;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+div.mobileNavSidebarLogo img
+{
+    height: 90%;
+}
+div.mobileNavSidebarLogo span
+{
+   font-size: calc(var(--textSize) * 0.8);
+}
+div.mobileNavSidebarLogo section
+{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.mobileNavSidebar ul section
+{
+    width: 100%;
+    color: white;
+    padding: 10px 15px;
+}
+.mobileNavSidebar label,.mobileNavSidebar a
+{
+    color: var(--cbd4);
+}
+
+ul.mobileNavLinks
+{
+    margin-top: auto;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+label.mobileNavLink
+{
+
+}
+.mobileNavFirstLink
+{
+    font-size: calc(var(--textSize) * 0.8) !important;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    width: 90% !important;
+    margin: auto;
+    padding: 10px 10px 10px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+.mobileNavFirstLink:hover
+{
+    background-color: var(--cwd3);
+}
+.mobileNavFirstLink span
+{
+   margin-right: 5px;
+}
+.mobileNavLinkPrev
+{
+   width: 85%;
+   margin: 0 auto;
+    font-size: calc(var(--textSize) * 1.5) !important;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.mobileNavSidebar a
+{
+    text-decoration: none;
+    width: 100%;
+}
+.mobileNavLinks > li
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2px auto;
+    font-size: 22px;
+    color: white !important;
+}
+
+ul.mobileNavLinks input[type="checkbox"]:checked + div
+{
+    left: 0;
+}
+.mobileNavLinks div:not(.mobileNavCategorie)
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10000;
+   display: flex;
+   flex-direction: column;
+   transition: all 0.2s ease-out;
+   background-color: var(--cwd2);
+}
+.mobileNavSidebar div div
+{
+   background-color: var(--cwd3);
+   z-index: 11000;
+}
+div.mobileNavCategorie
+{
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   box-sizing: border-box;
+   padding: 0 10px;
+   height: 90%;
+   margin: auto;
+}
+div.mobileNavCategorie a
+{
+   padding: 10px 10px 10px 15px;
+   width: 100%;
+   box-sizing: border-box;
+   font-size: calc(var(--textSize) * 1);
+}
+
+li.hmbAuthPart
+{
+   border-top: solid 2px var(--cwd4);
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0 !important;
+    background-color: red;
+}
+li.hmbAuthPart a
+{
+    text-align: center;
+    margin: 0 !important;
+    font-size: calc(var(--textSize) * 0.8) !important;
+    padding: 10px 0;
+}
