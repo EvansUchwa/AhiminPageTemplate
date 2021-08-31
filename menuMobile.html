@@ -4,71 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/menuBase.css">
     <link rel="stylesheet" href="css/hmb.css">
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="lanav">
-        <div class="logo">
-            Logo
-        </div>
+    <!-- --colorPrincipal: #ffc423;
+    --rgbPrincipal:  rgb(247, 148, 29);
 
-        <div class="mobileHmb">
+    --colorPrLow1: #c79400;
+    --colorPrLow2: #fff75d;
+    --colorPrLow3: #fff6db;
+
+    --colorSecond: #0f3048;
+    --colorScLow1: #000621;
+    --colorScLow2: #3d5974; -->
+    <nav class="mobileNav">
+
+        <div class="mobileNavBtn">
             <input type="checkbox" id="chkHmb">
-            <label for="chkHmb" id="mhmbBars">
-                <div></div>
-                <div></div>
+
+            <label for="chkHmb" id="mhmbBars" class="mdi mdi-menu mobileNavIcon">
             </label>
 
-            <ul class="mhmbLink">
-                    <section class="mhmbLink">
-                        <label for="chkHmb">Retour</label>
+            <div class="mobileNavSidebar">
+                <div class="mobileNavLinkPrev">
+                    <label for="chkHmb" class="mdi mdi-arrow-left">
+                    </label>
+                </div>
+
+                <div class="mobileNavSidebarLogo">
+                    <img src="img/png/logfinal.png">
+                    <section>
+                        <b>Odja</b>
+                        <span>Lorem dolor ipsum</span>
                     </section>
+                </div>
+
+                <ul class="mobileNavLinks">
                     <li>
-                        <a href="">Accueil</a>
+                        <a href="" class="mobileNavFirstLink">
+                            <span class="mdi mdi-home"></span>
+                        Accueil</a>
                     </li>
                     <li>
-                        <label for="chkHmb1">Produits</label>
+                        <label for="chkHmb1" class="mobileNavFirstLink">
+                            <span class="mdi mdi-basket"></span>
+                        Produits</label>
                         <input type="checkbox" id="chkHmb1">
                         <div>
-                            <label for="chkHmb1">Retour</label>
-                            <a href="">Ajouter un produit</a>
-                            <a href="">Voir les produit</a>
-                            <a href="">Top des produit</a>
-                            <label for="chkCat1">Caegorie de produit</label>
-                            <input type="checkbox"  id="chkCat1">
-                            <div>
-                                <label for="chkCat1">Retour</label>
-                                <a href="">Ca 1</a>
-                                <a href="">Ca 2</a>
+                            <label for="chkHmb1" class="mobileNavLinkPrev mdi mdi-arrow-left">
+                            </label>
+                            <div class="mobileNavCategorie">
+                                <a href="">Categorie 1</a>
+                                <a href="">Categorie 2</a>
+                                <a href="">Categorie 3</a>
+                                <a href="">Categorie 4</a>
+                                <a href="">Categorie 5</a>
+                                <a href="">Categorie 6</a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <label for="chkHmb2">Service</label>
+                        <label for="chkHmb2" class="mobileNavFirstLink">
+                            <span class="mdi mdi-handshake"></span>
+                        Service</label>
                         <input type="checkbox" id="chkHmb2">
                         <div>
-                            <label for="chkHmb2">Retour</label>
-                            <a href="">Ajouter un service</a>
-                            <a href="">Voir les service</a>
-                            <a href="">Top des service</a>
-                            <label for="chkCat2">Caegorie de service</label>
-                            <input type="checkbox"  id="chkCat2">
-                            <div>
-                                <label for="chkCat2">Retour</label>
-                                <a href="">Ca 1</a>
-                                <a href="">Ca 2</a>
+                            <label for="chkHmb2" class="mobileNavLinkPrev mdi mdi-arrow-left">
+                            </label>
+                            <div class="mobileNavCategorie">
+                                <a href="">Categorie 1</a>
+                                <a href="">Categorie 2</a>
+                                <a href="">Categorie 3</a>
+                                <a href="">Categorie 4</a>
+                                <a href="">Categorie 5</a>
+                                <a href="">Categorie 6</a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <label for="chkHmb3">A propos</label>
+                        <label for="chkHmb3" class="mobileNavFirstLink">
+                            <span class="mdi mdi-alert"></span>
+                        A propos</label>
                         <input type="checkbox"  id="chkHmb3">
+
                         <div>
-                            <label for="chkHmb3">Retour</label>
-                            <a href="">Qui sommes nous?</a>
-                            <a href="">Aide</a>
-                            <a href="">Mentions Legales</a>
+                            <label for="chkHmb3" class="mobileNavLinkPrev mdi mdi-arrow-left">
+                            </label>
+                            <div class="mobileNavCategorie">
+                                <a href="">Qui sommes nous?</a>
+                                <a href="">Aide</a>
+                                <a href="">Mentions Legales</a>
+                                
+                            </div>
+                            
                         </div>
                     </li>
                     <li class="hmbAuthPart">
@@ -76,8 +107,30 @@
                         <a href="">Inscription</a>
                     </li>
             </ul>
+            </div>
             
         </div>
+
+        <div class="mobileNavLogo">
+            <img src="img/png/logfinal.png">
+        </div>
+
+        <div class="mobileNavAccount">
+            <span class="mdi mdi-account mobileNavIcon navWrapper"></span>
+            <div>
+                <a href="">Connexion</a>
+                <a href="">Inscription</a>
+            </div>
+        </div>
     </nav>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).on('click',".navWrapper",function()
+    {
+        $(this).next().slideToggle(100);
+    })
+</script>
 </body>
 </html>
